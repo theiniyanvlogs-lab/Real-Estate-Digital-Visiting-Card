@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arul Realtors | DTCP & RERA Approved Plots in Chennai</title>
+  <meta name="description" content="Arul Realtors - Premium DTCP & RERA Approved Plots, Villas and Flats near MMLP Chennai, Mappedu, Parandur Airport, Sriperumbudur, Oragadam and growth zones around Chennai." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    :root {
+      --gold: #f4c542;
+      --gold-dark: #c99612;
+      --blue: #0f2e63;
+      --blue2: #1b4f9c;
+      --dark: #0a1830;
+      --white: #ffffff;
+      --light: #f5f8ff;
+      --shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+      --radius: 26px;
+    }
+
+    body {
+      background: linear-gradient(135deg, #d9e8ff 0%, #eef5ff 40%, #c8dbff 100%);
+      min-height: 100vh;
+      padding: 16px;
+      color: #0b1a33;
+    }
+
+    .wrapper {
+      max-width: 460px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.96);
+      border-radius: 32px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(15,46,99,0.10);
+      position: relative;
+    }
+
+    .hero {
+      position: relative;
+      background:
+        linear-gradient(rgba(8, 24, 48, 0.50), rgba(8, 24, 48, 0.70)),
+        url('assets/images/plot1.jpg') center/cover no-repeat;
+      padding: 28px 20px 24px;
+      text-align: center;
+      color: white;
+    }
+
+    .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #ffd95a, #e6b422);
+      color: #2d1a00;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      box-shadow: 0 8px 20px rgba(244,197,66,0.25);
+    }
+
+    .logo-circle {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      margin: 0 auto 12px;
+      background: linear-gradient(135deg, #173e7a, #0c2550);
+      border: 3px solid rgba(255,255,255,0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cinzel', serif;
+      font-size: 42px;
+      font-weight: 700;
+      color: var(--gold);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+    }
+
+    .business-name {
+      font-family: 'Cinzel', serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1.1;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.35);
+      margin-bottom: 4px;
+    }
+
+    .sub-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #f2f6ff;
+      margin-bottom: 10px;
+    }
+
+    .hero-text {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #eef4ff;
+      max-width: 360px;
+      margin: 0 auto;
+    }
+
+    .content {
+      padding: 18px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--blue);
+      margin-bottom: 12px;
+    }
+
+    .quick-actions {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .action-btn {
+      text-decoration: none;
+      background: linear-gradient(135deg, var(--blue), var(--blue2));
+      color: white;
+      border-radius: 18px;
+      padding: 14px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      box-shadow: 0 10px 22px rgba(15,46,99,0.18);
+      transition: 0.25s ease;
+    }
+
+    .action-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .gold-card {
+      background: linear-gradient(180deg, #fffef8 0%, #fff8e8 100%);
+      border: 1px solid rgba(244,197,66,0.35);
+      border-radius: 20px;
+      padding: 16px;
+    }
+
+    .info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .info-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .info-icon {
+      min-width: 40px;
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: #fff3c8;
+      color: #9b6a00;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+
+    .info-text {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #222;
+    }
+
+    .info-text strong {
+      display: block;
+      font-size: 12px;
+      color: #6a5500;
+      margin-bottom: 2px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+
+    .highlight-box {
+      background: linear-gradient(135deg, #0f2e63, #173f84);
+      color: white;
+      border-radius: 20px;
+      padding: 16px;
+      box-shadow: 0 12px 25px rgba(15,46,99,0.20);
+    }
+
+    .highlight-box h3 {
+      font-size: 18px;
+      color: var(--gold);
+      margin-bottom: 8px;
+      font-weight: 800;
+    }
+
+    .highlight-box p {
+      font-size: 13px;
+      line-height: 1.7;
+      color: #eef4ff;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .trust-item {
+      background: white;
+      border: 1px solid rgba(15,46,99,0.08);
+      border-radius: 16px;
+      padding: 14px 10px;
+      text-align: center;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.04);
+    }
+
+    .trust-item i {
+      display: block;
+      font-size: 18px;
+      color: var(--gold-dark);
+      margin-bottom: 8px;
+    }
+
+    .trust-item span {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--blue);
+      line-height: 1.4;
+      display: block;
+    }
+
+    .plots-grid {
+      display: grid;
+      gap: 10px;
+    }
+
+    .plot-item {
+      background: linear-gradient(135deg, #f9fbff, #eef4ff);
+      border: 1px solid rgba(27,79,156,0.12);
+      border-left: 6px solid var(--gold);
+      border-radius: 16px;
+      padding: 14px;
+    }
+
+    .plot-name {
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--blue);
+      margin-bottom: 4px;
+    }
+
+    .plot-price {
+      font-size: 13px;
+      font-weight: 700;
+      color: #0c7a38;
+    }
+
+    .cta-btn {
+      width: 100%;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 16px;
+      border-radius: 18px;
+      font-size: 15px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      transition: 0.25s ease;
+    }
+
+    .cta-primary {
+      background: linear-gradient(135deg, #dca517, #f4c542);
+      color: #2d1a00;
+      box-shadow: 0 12px 24px rgba(244,197,66,0.22);
+    }
+
+    .cta-secondary {
+      background: linear-gradient(135deg, var(--blue), var(--blue2));
+      color: white;
+      box-shadow: 0 12px 24px rgba(15,46,99,0.16);
+    }
+
+    .cta-light {
+      background: white;
+      color: var(--blue);
+      border: 1px solid rgba(15,46,99,0.10);
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .sticky-call {
+      position: sticky;
+      bottom: 12px;
+      z-index: 50;
+      margin-top: 6px;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #5b6c8e;
+      padding-top: 4px;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #25D366;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 28px;
+      box-shadow: 0 14px 28px rgba(37, 211, 102, 0.28);
+      z-index: 999;
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 12px; }
+      .content { padding: 16px; }
+      .business-name { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="badge">DTCP & RERA Approved Plots</div>
+      <div class="logo-circle">AR</div>
+      <div class="business-name">Arul Realtors</div>
+      <div class="sub-title">Plots | Villas | Flats</div>
+      <div class="hero-text">
+        Chennai’s Next Growth Hub — Mappedu, MMLP Chennai, Near Parandur Airport, 
+        Sriperumbudur, Oragadam and Premium Investment Corridors.
+      </div>
+    </div>
+
+    <div class="content">
+
+      <!-- QUICK ACTIONS -->
+      <div class="section">
+        <div class="section-title">Quick Actions</div>
+        <div class="quick-actions">
+          <a class="action-btn" href="tel:+919840133172">
+            <i class="fa-solid fa-phone"></i> Call Now
+          </a>
+          <a class="action-btn" href="https://wa.me/919840133172?text=Hello%20I%20am%20interested%20in%20Arul%20Realtors%20properties" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+          <a class="action-btn" href="mailto:arulrealtors@gmail.com">
+            <i class="fa-solid fa-envelope"></i> Email
+          </a>
+          <a class="action-btn" href="https://maps.google.com/?q=No.95%2C+Sundarar+Street%2C+Thiruvaleeshwarar+Nagar%2C+Anna+Nagar+West%2C+Chennai+600040" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-location-dot"></i> Location
+          </a>
+        </div>
+      </div>
+
+      <!-- HIGHLIGHT -->
+      <div class="section">
+        <div class="highlight-box">
+          <h3>MMLP Chennai at Mappedu</h3>
+          <p>
+            Golden Investment Opportunity • Near Parandur Airport • Sriperumbudur • Oragadam • 
+            Sunguvarchatram Growth Zone. Today’s investment can multiply many times within 5 years.
+          </p>
+        </div>
+      </div>
+
+      <!-- TRUST -->
+      <div class="section">
+        <div class="section-title">Why Choose Arul Realtors</div>
+        <div class="trust-grid">
+          <div class="trust-item">
+            <i class="fa-solid fa-stamp"></i>
+            <span>DTCP Approved Layouts</span>
+          </div>
+          <div class="trust-item">
+            <i class="fa-solid fa-certificate"></i>
+            <span>RERA Approved Projects</span>
+          </div>
+          <div class="trust-item">
+            <i class="fa-solid fa-building"></i>
+            <span>Plots • Villas • Flats</span>
+          </div>
+          <div class="trust-item">
+            <i class="fa-solid fa-chart-line"></i>
+            <span>High Growth Investment Zones</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="section">
+        <div class="section-title">Contact Details</div>
+        <div class="gold-card">
+          <div class="info-list">
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-user-tie"></i></div>
+              <div class="info-text">
+                <strong>Business Name</strong>
+                Arul Realtors
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="info-text">
+                <strong>Phone Number</strong>
+                +91 9840133172
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div class="info-text">
+                <strong>WhatsApp Number</strong>
+                +91 9840133172
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="info-text">
+                <strong>Office Address</strong>
+                No.95, Sundarar Street, Thiruvaleeshwarar Nagar, Anna Nagar West, Chennai - 600040
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PLOTS -->
+      <div class="section">
+        <div class="section-title">Featured Plot Locations</div>
+        <div class="plots-grid">
+          <div class="plot-item">
+            <div class="plot-name">Kayarambedu (Kayarambedu)</div>
+            <div class="plot-price">₹3200 / Sq.Ft • DTCP & RERA Approved</div>
+          </div>
+          <div class="plot-item">
+            <div class="plot-name">Veppampattu</div>
+            <div class="plot-price">₹3300 / Sq.Ft • DTCP & RERA Approved</div>
+          </div>
+          <div class="plot-item">
+            <div class="plot-name">Sevvapettai</div>
+            <div class="plot-price">₹1200 / Sq.Ft • DTCP & RERA Approved</div>
+          </div>
+          <div class="plot-item">
+            <div class="plot-name">Kanagammachathiram</div>
+            <div class="plot-price">₹1000 / Sq.Ft • DTCP & RERA Approved</div>
+          </div>
+          <div class="plot-item">
+            <div class="plot-name">Thiruthani Near MRF Factory</div>
+            <div class="plot-price">₹550 / Sq.Ft • DTCP & RERA Approved</div>
+          </div>
+          <div class="plot-item">
+            <div class="plot-name">MMLP / Near Parandur Airport</div>
+            <div class="plot-price">₹1500 / Sq.Ft • DTCP & RERA Approved</div>
+          </div>
+          <div class="plot-item">
+            <div class="plot-name">Kilanoor</div>
+            <div class="plot-price">₹1200 / Sq.Ft • DTCP & RERA Approved</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CUSTOMER ACTIONS -->
+      <div class="section">
+        <div class="section-title">Customer Actions</div>
+
+        <a class="cta-btn cta-primary" href="https://wa.me/919840133172?text=Hello%20I%20want%20to%20book%20a%20site%20visit%20for%20Arul%20Realtors" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp"></i>
+          Book Site Visit
+        </a>
+
+        <a class="cta-btn cta-secondary" href="gallery.html">
+          <i class="fa-solid fa-images"></i>
+          View Property Images
+        </a>
+
+        <a class="cta-btn cta-secondary" href="videos.html">
+          <i class="fa-solid fa-circle-play"></i>
+          View Property Videos
+        </a>
+
+        <button class="cta-btn cta-light" onclick="shareCard()">
+          <i class="fa-solid fa-share-nodes"></i>
+          Share This Card
+        </button>
+
+        <button class="cta-btn cta-light" onclick="downloadVCF()">
+          <i class="fa-solid fa-address-card"></i>
+          Save Contact
+        </button>
+      </div>
+
+      <!-- STICKY CALL -->
+      <div class="sticky-call">
+        <a class="cta-btn cta-primary" href="tel:+919840133172">
+          <i class="fa-solid fa-phone"></i>
+          Call for Property Enquiry
+        </a>
+      </div>
+
+      <div class="footer">
+        Premium Real Estate Digital Visiting Card • Arul Realtors
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP -->
+  <a class="floating-whatsapp" href="https://wa.me/919840133172?text=Hello%20I%20am%20interested%20in%20your%20property%20details" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script>
+    function shareCard() {
+      if (navigator.share) {
+        navigator.share({
+          title: 'Arul Realtors',
+          text: 'Check out Arul Realtors Premium Property Digital Visiting Card',
+          url: window.location.href
+        });
+      } else {
+        navigator.clipboard.writeText(window.location.href)
+          .then(() => alert('Link copied successfully! Now share it anywhere.'))
+          .catch(() => alert('Copy failed. Please copy the URL manually.'));
+      }
+    }
+
+    function downloadVCF() {
+      const vcfContent = `BEGIN:VCARD
+VERSION:3.0
+FN:Arul Realtors
+ORG:Arul Realtors
+TEL;TYPE=CELL:+919840133172
+EMAIL:arulrealtors@gmail.com
+ADR:;;No.95, Sundarar Street, Thiruvaleeshwarar Nagar, Anna Nagar West, Chennai - 600040;;;;
+END:VCARD`;
+
+      const blob = new Blob([vcfContent], { type: 'text/vcard' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = 'Arul_Realtors_Contact.vcf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+
+</body>
+</html>
